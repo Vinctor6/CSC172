@@ -1,0 +1,25 @@
+public class StringMagic {
+
+    public static void main(String[] args) {
+	String str1 = "hey";
+	String str2 = "hey";
+	String str3 = new String("hey");
+	if(str1 == str2)
+		System.out.println("Are they the same thing?");
+
+	if(str1.equals(str2))
+		System.out.println("Here you go!");
+
+	if(str1.equals(str3))
+		System.out.println("They look the same.");
+
+	if(str1 == str3)
+		System.out.println("But, they looked the same.");
+	else
+		System.out.println("Upss!");
+	str2 = "I'm different";
+	System.out.println(str1); // don't forget this
+	if(str1 == str2)
+		System.out.println("But why?");	
+    }
+}
